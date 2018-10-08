@@ -1,5 +1,7 @@
 import React from "react";
 import { Input } from "./Input";
+import { ExpiryDate } from "./ExpiryDate";
+import { Button } from "./Button";
 
 export const PaymentForm = function(props) {
   const { onSubmit } = props;
@@ -19,6 +21,8 @@ export const PaymentForm = function(props) {
           name="creditCardNumber"
           placeholder="0000 0000 0000 0000"
         />
+        <ExpiryDate />
+        <Button name="CheckoutButton" />
       </form>
     </div>
   );

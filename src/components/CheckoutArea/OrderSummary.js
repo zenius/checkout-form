@@ -28,12 +28,14 @@ export const OrderSummary = function(props) {
             <td>Tax</td>
             <td>{_tax} GBP</td>
           </tr>
-          <tr>
-            <td>Total</td>
-            <td>{total} GBP</td>
-          </tr>
         </tbody>
       </table>
+      <div className="Total">
+        <div className="TotalLabel">Total</div>
+        <div className="Amount">
+          {total} <small>GBP</small>
+        </div>
+      </div>
     </div>
   );
 };
